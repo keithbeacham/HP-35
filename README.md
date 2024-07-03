@@ -1,8 +1,5 @@
-# React + Vite
+The HP-35 was the first pocket calculator designed for engineers. Introduced by Hewlett Packard in 1972 it became hugely successful. It is unusual in using Reverse Polish Notation (RPN) for input, a format which has since been superceded by algebraic notation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This code simulates the HP-35. All functions have been implemented. The layout is correct but not a photographic likeness. It has been implemented in Javascript React, developed using Vite.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run, download the repository and enter "npm i" then "npm run dev". The simulator can be displayed on a browser through a localhost port displayed by Vite when "npm run dev" is entered. To break out of Vite, use Ctrl-C.
