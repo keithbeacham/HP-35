@@ -1,0 +1,130 @@
+#root {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "title title"
+    "display display"
+    "function-keys function-keys"
+    "entry-keys entry-keys"
+    "operators numerics";
+  margin: 0 auto;
+  background-color: grey;
+  border: solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+}
+
+.displayScreen {
+  grid-area: display;
+  display: grid;
+  grid-template-columns: 1em 11em 1em 2em;
+  grid-template-rows: auto;
+  background-color: black;
+  color: red;
+  margin-bottom: 40px;
+  font-size: x-large;
+  border-radius: 4px;
+  text-align: left;
+}
+.displaySign {
+  grid-column: 1/2;
+  text-align: center;
+}
+.displayNumber {
+  grid-column: 2/3;
+}
+.displayExpSign {
+  grid-column: 3/4;
+}
+.displayExponential {
+  grid-column: 4 / span 1;
+}
+
+.functionKeys {
+  grid-area: function-keys;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 30px);
+  gap: 25px 15px;
+  padding: 0;
+  margin: 0;
+}
+.functionButton {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+.entryKeys {
+  grid-area: entry-keys;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 30px;
+  gap: 15px;
+  padding: 0;
+  margin: 25px 0 5px 0;
+}
+.enterButton {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #16acf2;
+  color: white;
+}
+.miscButton {
+  width: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #16acf2;
+  color: white;
+}
+
+.operatorKeys {
+  grid-area: operators;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 30px);
+  gap: 25px;
+  margin: 20px 20px 0 0;
+  padding: 0;
+}
+.operatorButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #16acf2;
+  color: white;
+}
+.numericKeys {
+  grid-area: numerics;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 30px);
+  gap: 25px 20px;
+  margin-top: 20px;
+  padding: 0;
+}
+.numericButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: rgb(228, 226, 226);
+  color: black;
+}
